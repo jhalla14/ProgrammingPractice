@@ -25,15 +25,30 @@ public class Node {
         n.next = end;  //make the last one the new end Node
     }
 
-    @Override
-    public String toString() {
+    /*
+    Delete a node from the linked list
+     */
+    public Node deleteNode(Node head, int data){
+        Node n = head;
 
-//        Node n = this;
-//        while(n.next != null){
-//            System.out.println(this.data);
-//            n = n.next;
-//        }
+        //if the node to delete is the head then just return the next one
+        if (n.data == data){
+            return head.next;
+        }
 
-        return super.toString();    //To change body of overridden methods use File | Settings | File Templates.
+        //as long as there's element in the list
+        while(n.next != null){
+            Node nodeToDelete = null;
+            //find the node you want to delete
+            if (n.next.data == data){
+                //point it's pointer to the next one
+                n.next = n.next.next;
+                return n;
+            }
+            n = head.next;  //advance to the next Node
+        }
+
+        return head;
     }
+
 }

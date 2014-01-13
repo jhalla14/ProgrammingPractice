@@ -11,17 +11,28 @@ public class Main {
 
     public static void main(String[] args){
 
-        Node list = new Node(2);
+        Node linkedList = new Node(2);
 
-        list.appendToTail(3);
-        list.appendToTail(4);
+        linkedList.appendToTail(3);
+        linkedList.appendToTail(4);
 
-        while (list.next != null){
-            System.out.println(list.data);
-            list = list.next;
+
+//        while (linkedList.next != null){
+//            System.out.println(linkedList.data);
+//            linkedList = linkedList.next;
+//        }
+//        if (linkedList.next == null){
+//            System.out.println(linkedList.data);
+//        }
+
+        Node test = linkedList.deleteNode(linkedList, 3);
+
+        while(test.next != null){
+            System.out.println(test.data);
+            test = test.next;
         }
-        if (list.next == null){
-            System.out.println(list.data);
+        if (test.next == null){
+            System.out.print(test.data);
         }
     }
 }
