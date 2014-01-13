@@ -25,14 +25,23 @@ public class Main {
 //            System.out.println(linkedList.data);
 //        }
 
-        Node test = linkedList.deleteNode(linkedList, 3);
+//        Node test = linkedList.deleteNode(linkedList, 3);
+//
+//        while(test.next != null){
+//            System.out.println(test.data);
+//            test = test.next;
+//        }
+//        if (test.next == null){
+//            System.out.print(test.data);
+//        }
 
-        while(test.next != null){
-            System.out.println(test.data);
-            test = test.next;
-        }
-        if (test.next == null){
-            System.out.print(test.data);
-        }
+        CustomStack stack = new CustomStack();
+        stack.push(3);
+        stack.push(2);
+        stack.push(50000);
+
+//        System.out.println(stack.pop());
+        stack.pop();
+        System.out.println(stack.peek());
     }
 }
