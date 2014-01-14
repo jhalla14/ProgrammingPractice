@@ -31,8 +31,19 @@ public class CustomBinaryTree {
        root = insert(root, data);
     }
 
-    private Node insert(CustomNode root, Integer data){
+    private CustomNode insert(CustomNode node, Integer data){
+        //check if the tree is empty
+        if (node == null){
+            node = new CustomNode(data);
+        } else {
+           if (data <= node.data){
+               node.left = insert(node.left, data);
+           } else {
+               node.right = insert(node.right, data);
+           }
+        }
 
+        return node;
     }
 
 
