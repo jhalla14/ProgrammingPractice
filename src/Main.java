@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,37 +12,46 @@ public class Main {
 
     public static void main(String[] args){
 
-        Node linkedList = new Node(2);
+//        System.out.println(factorial(5));
+        fibonacci(1513492384);
+    }
 
-        linkedList.appendToTail(3);
-        linkedList.appendToTail(4);
+    public static List fibonacci(Integer limit){
+        Integer firstTerm = 1;
+        Integer secondTerm = 1;
+        Integer fib =  0;
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.add(firstTerm);
+        list.add(secondTerm);
+
+        while(fib < limit){
+            fib = firstTerm + secondTerm;
+            if (fib < limit) list.add(fib);
+
+            firstTerm = secondTerm; //first term is now the second term
+            secondTerm = fib; //second term becomes the most recent fibonacci number
+        }
+
+        System.out.println(list);
+
+        return list;
+    }
+
+    public static Integer factorial(Integer number){
+        if (number == 1){
+            return 1;
+        }
+
+        return  number*factorial(number-1);
+
+    }
 
 
-//        while (linkedList.next != null){
-//            System.out.println(linkedList.data);
-//            linkedList = linkedList.next;
-//        }
-//        if (linkedList.next == null){
-//            System.out.println(linkedList.data);
-//        }
+    public Boolean isPalindrome(Integer number){
 
-//        Node test = linkedList.deleteNode(linkedList, 3);
-//
-//        while(test.next != null){
-//            System.out.println(test.data);
-//            test = test.next;
-//        }
-//        if (test.next == null){
-//            System.out.print(test.data);
-//        }
 
-        CustomStack stack = new CustomStack();
-        stack.push(3);
-        stack.push(2);
-        stack.push(50000);
 
-//        System.out.println(stack.pop());
-        stack.pop();
-        System.out.println(stack.peek());
+
+        return false;
     }
 }
