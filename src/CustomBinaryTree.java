@@ -9,8 +9,6 @@ public class CustomBinaryTree {
 
     private CustomNode root;
 
-
-
     private void CustomBinaryTree(){
         root = null;
     }
@@ -29,7 +27,11 @@ public class CustomBinaryTree {
         }
     }
 
-    private void insert(CustomNode node){
+    private void insert(Integer data){
+       root = insert(root, data);
+    }
+
+    private Node insert(CustomNode root, Integer data){
 
     }
 
