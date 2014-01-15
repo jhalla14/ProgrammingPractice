@@ -13,7 +13,7 @@ public class CustomBinaryTree {
         root = null;
     }
 
-    private boolean lookUp(CustomNode node, Integer data){
+    public boolean lookUp(CustomNode node, Integer data){
         if (node == null){
             return false;
         }
@@ -27,7 +27,7 @@ public class CustomBinaryTree {
         }
     }
 
-    private void insert(Integer data){
+    public void insert(Integer data){
        root = insert(root, data);
     }
 
@@ -52,7 +52,7 @@ public class CustomBinaryTree {
         CustomNode left;
         CustomNode right;
 
-        private CustomNode(Integer data){
+        protected CustomNode(Integer data){
             this.data = data;
             left = null;
             right = null;

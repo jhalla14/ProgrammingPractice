@@ -4,7 +4,7 @@
     <list default="true" id="8526e0d1-c217-4fc4-9fa7-677f743b4c04" name="Default" comment="" />
     <ignored path="ProgrammingPractice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389653086803" ignored="false" />
+    <file path="/Main.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389803915565" ignored="false" />
     <file path="/fragment.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389629018004" ignored="false" />
     <file path="/Node.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389644470303" ignored="false" />
     <file path="/CustomStack.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389644493325" ignored="false" />
@@ -12,7 +12,7 @@
     <file path="/CustomTree.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389719817501" ignored="false" />
     <file path="$PROJECT_DIR$/src/CustomTree.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389719831306" ignored="false" />
     <file path="/CustomNode.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389720605413" ignored="false" />
-    <file path="/CustomBinaryTree.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389721010136" ignored="false" />
+    <file path="/CustomBinaryTree.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389803982445" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,22 +73,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+            <state line="27" column="8" selection-start="588" selection-end="588" vertical-scroll-proportion="0.7612782">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#548#557#0" expanded="true" />
+                <element signature="e#818#827#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomBinaryTree.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CustomBinaryTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CustomBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="9" selection-start="517" selection-end="517" vertical-scroll-proportion="0.37931034">
+            <state line="49" column="11" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,17 +134,17 @@
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/CustomStack.java" />
         <option value="$PROJECT_DIR$/src/CustomQueue.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CustomTree.java" />
         <option value="$PROJECT_DIR$/src/CustomNode.java" />
         <option value="$PROJECT_DIR$/src/CustomBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="481" />
+    <option name="x" value="266" />
     <option name="y" value="22" />
-    <option name="width" value="922" />
+    <option name="width" value="1061" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -317,7 +317,7 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="481" y="22" width="922" height="873" extended-state="0" />
+    <frame x="266" y="22" width="1061" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -336,8 +336,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21575342" sideWeight="0.7436919" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2563081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21477832" sideWeight="0.7436919" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2563081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -429,20 +429,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/CustomBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#548#557#0" expanded="true" />
-          </folding>
+        <state line="49" column="11" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CustomBinaryTree.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="9" selection-start="517" selection-end="517" vertical-scroll-proportion="0.37931034">
-          <folding />
+        <state line="27" column="8" selection-start="588" selection-end="588" vertical-scroll-proportion="0.7612782">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#818#827#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
