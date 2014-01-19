@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -39,11 +36,117 @@ public class Main {
 //        }
 
 //        System.out.println(hasUniqueCharactersInString("Palantir"));
-        System.out.println(isStringPermutationOfString("palanTir", "Tirpalan"));
+//        System.out.println(isStringPermutationOfString("palanTir", "Tirpalan"));
+//          System.out.println(replaceWhiteSpace("Mr John Smith   ", 13));
+
+//        char[][] board = new char[4][4];
+//        board[0][0] = 'a';
+//        board[0][1] = 'b';
+//        board[0][2] = 'c';
+//        board[0][3] = 'd';
+//        board[1][0] = 'e';
+//        board[1][1] = 'f';
+//        board[1][2] = 'g';
+//        board[1][3] = 'h';
+//        board[2][0] = 'i';
+//        board[2][1] = 'j';
+//        board[2][2] = 'k';
+//        board[2][3] = 'l';
+//        board[3][0] = 'm';
+//        board[3][1] = 'n';
+//        board[3][2] = 'o';
+//        board[3][3] = 'p';
+//
+//         List<Character> list = findAllWords(board);
+
+        System.out.println(isPalindrome("amanaplanacanalpanama"));
 
     }
 
+    public static List<Character> findAllWords(char[][] board){
+        int length = board.length;
+        Set<Set<Character>> horiztonalSets = new HashSet<Set<Character>>();
+        Set<Set<Character>> verticalSets = new HashSet<Set<Character>>();
+        Set<Set<Character>> diagonalSets = new HashSet<Set<Character>>();
+
+
+        for (int i=0; i<=length-1;i++){
+           for (int j=0; j<=length-1; j++){
+               int counter = 0;
+               Set<Character> horizontalSet = new HashSet<Character>();
+               Set<Character> verticalSet = new HashSet<Character>();
+               Set<Character> diagonalSet = new HashSet<Character>();
+               while (counter <= length-1){
+                   if (i+counter <= length-1 && j+counter <=length-1){
+                       horizontalSet.add(board[i][j + counter]);
+                       verticalSet.add(board[i+counter][j]);
+                       diagonalSet.add(board[i+counter][j+counter]);
+
+                       horiztonalSets.add(horizontalSet);
+                       verticalSets.add(verticalSet);
+                       diagonalSets.add(diagonalSet);
+                   }
+                   counter++;
+               }
+           }
+        }
+
+        System.out.println(horiztonalSets);
+        System.out.println(verticalSets);
+        System.out.println(diagonalSets);
+
+
+       return null;
+    }
+
+    public static String replaceWhiteSpace(String input, int length){
+        if (input == null) return null;
+
+        char[] inputCharArray = input.trim().toCharArray();
+
+        int whiteSpaceCounter = 0;
+        for (int i=0; i<=inputCharArray.length-1; i++){
+           if (inputCharArray[i] == ' '){
+               whiteSpaceCounter++;
+           }
+        }
+
+        System.out.println(whiteSpaceCounter);
+        int newLength = length + (whiteSpaceCounter * 3);
+        System.out.println(newLength);
+
+        char[] output = new char[newLength];
+        int outputCounter = 0;
+        for (int i=0; i<=inputCharArray.length-1; i++){
+
+            if (inputCharArray[i] == ' '){
+                output[i] = '%';
+                output[i+1] = '2';
+                output[i+2] = '0';
+                outputCounter += 3;
+            } else {
+
+             output[outputCounter + 1] = inputCharArray[i];
+             outputCounter +=1;
+
+            }
+
+        }
+
+        for (int i=0; i<=output.length-1; i++){
+            System.out.println(output[i]);
+        }
+
+        return output.toString();
+    }
+
     public static Boolean isStringPermutationOfString(String alpha, String beta){
+
+        if (alpha == null || beta == null){
+            System.err.println("Check method paramters of null value");
+            return null;
+        }
+
         char[] alphaCharArray = alpha.toCharArray();
         char[] betaCharArray = beta.toCharArray();
 
@@ -61,8 +164,6 @@ public class Main {
             }
 
         }
-
-
 
         return true;
     }
@@ -83,8 +184,6 @@ public class Main {
                 map.put(inputCharArray[i], 1);
             }
         }
-
-
 
         return map;
     }
@@ -135,11 +234,46 @@ public class Main {
     }
 
 
-    public Boolean isPalindrome(Integer number){
+    public static Boolean isPalindrome(String string){
+        if (string == null){
+            System.err.println("Input string is null");
+            return false;
+        }
+        char[] charArray = string.toCharArray();
+        int length = charArray.length;
+        int midpoint;
+
+        Stack<Character> stack = new Stack<Character>();
+
+        if (length % 2 == 0){
+            midpoint = (length-1)/2;
+            System.out.println(midpoint);
+            for (int i=0; i<=midpoint;i++){
+                stack.push(charArray[i]);
+            }
+            for (int j=midpoint+1; j<=length-1; j++){
+                if (!(stack.pop() == charArray[j])){
+                    return false;
+                }
+            }
+        } else {
+            midpoint = length/2;
+            System.out.println(midpoint);
+            for (int i=0; i<midpoint;i++){
+                stack.push(charArray[i]);
+            }
+
+            for (int j=midpoint+1; j<=length-1; j++){
+                if (!(stack.pop() == charArray[j])){
+                    return false;
+                }
+            }
+        }
 
 
 
 
-        return false;
+
+        return true;
     }
 }
