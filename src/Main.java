@@ -81,31 +81,28 @@ public class Main {
 
     }
 
-    public static Integer[] bubbleSort(Integer[] list){
-        if (list == null) return null;
-
+    public static Integer[] bubbleSort(Integer[] array){
+        if (array == null) return null;
+        int length = array.length;
         int firstNumber;
-        int secondNumber = 0;
-        for (int i=0; i<=list.length-1;i++){
-            firstNumber = list[i];
+        int secondNumber;
+        for (int comparisons = 0; comparisons <= length - 1; comparisons++) {
+            for (int i = 0; i <= length - 1; i++) {
+                firstNumber = array[i];
 
-            if (firstNumber + 1 <= list.length-1){
-               secondNumber = list[i+1];
+                if (i + 1 <= length - 1) {
+                    secondNumber = array[i + 1];
+                    if (firstNumber > secondNumber) {
+                        array[i] = secondNumber;
+                        array[i + 1] = firstNumber;
+                    }
+                }
             }
-
-            if (firstNumber > secondNumber){
-                int temp = firstNumber;
-                list[i] = list[i+1];
-                list[i+1] = temp;
-
-
-            }
-
         }
 
 
 
-        return null;
+        return array;
     }
 
     public static List<Character> findAllWords(char[][] board){
