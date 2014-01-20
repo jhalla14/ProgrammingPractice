@@ -1,3 +1,8 @@
+import com.sun.corba.se.impl.orbutil.graph.GraphImpl;
+import com.sun.corba.se.impl.orbutil.graph.NodeData;
+import sun.tools.tree.*;
+import sun.tools.tree.Node;
+
 import java.util.*;
 
 /**
@@ -59,8 +64,48 @@ public class Main {
 //
 //         List<Character> list = findAllWords(board);
 
-        System.out.println(isPalindrome("amanaplanacanalpanama"));
+//        System.out.println(isPalindrome("amanaplanacanalpanama"));
 
+        Integer[] array = new Integer[5];
+        array[0] = 10;
+        array[1] = 5;
+        array[2] = 6;
+        array[3] = 2;
+        array[4] = 3;
+
+        Integer[] sortedArray =  bubbleSort(array);
+
+        for (int i=0; i<=sortedArray.length-1;i++){
+            System.out.println(sortedArray[i]);
+        }
+
+    }
+
+    public static Integer[] bubbleSort(Integer[] list){
+        if (list == null) return null;
+
+        int firstNumber;
+        int secondNumber = 0;
+        for (int i=0; i<=list.length-1;i++){
+            firstNumber = list[i];
+
+            if (firstNumber + 1 <= list.length-1){
+               secondNumber = list[i+1];
+            }
+
+            if (firstNumber > secondNumber){
+                int temp = firstNumber;
+                list[i] = list[i+1];
+                list[i+1] = temp;
+
+
+            }
+
+        }
+
+
+
+        return null;
     }
 
     public static List<Character> findAllWords(char[][] board){
@@ -270,10 +315,7 @@ public class Main {
             }
         }
 
-
-
-
-
         return true;
     }
+
 }

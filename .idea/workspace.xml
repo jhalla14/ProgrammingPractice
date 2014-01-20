@@ -4,7 +4,7 @@
     <list default="true" id="8526e0d1-c217-4fc4-9fa7-677f743b4c04" name="Default" comment="" />
     <ignored path="ProgrammingPractice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1390105813845" ignored="false" />
+    <file path="/Main.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1390146075154" ignored="false" />
     <file path="/fragment.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389629018004" ignored="false" />
     <file path="/Node.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389644470303" ignored="false" />
     <file path="/CustomStack.java" changelist="8526e0d1-c217-4fc4-9fa7-677f743b4c04" time="1389644493325" ignored="false" />
@@ -81,17 +81,18 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="269" column="13" selection-start="7931" selection-end="7931" vertical-scroll-proportion="1.112782">
+            <state line="97" column="16" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.6766917">
               <folding>
-                <element signature="e#1837#1853#0" expanded="true" />
-                <element signature="e#1911#1927#0" expanded="true" />
-                <element signature="e#1985#2001#0" expanded="true" />
-                <element signature="e#2180#2191#0" expanded="true" />
-                <element signature="e#2250#2261#0" expanded="true" />
-                <element signature="e#2320#2331#0" expanded="true" />
-                <element signature="e#5352#5372#0" expanded="true" />
-                <element signature="e#6256#6265#0" expanded="true" />
-                <element signature="e#7169#7180#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2871#2887#0" expanded="true" />
+                <element signature="e#2945#2961#0" expanded="true" />
+                <element signature="e#3019#3035#0" expanded="true" />
+                <element signature="e#3214#3225#0" expanded="true" />
+                <element signature="e#3284#3295#0" expanded="true" />
+                <element signature="e#3354#3365#0" expanded="true" />
+                <element signature="e#6386#6406#0" expanded="true" />
+                <element signature="e#7290#7299#0" expanded="true" />
+                <element signature="e#8203#8214#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -220,8 +221,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,9 +239,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -433,15 +434,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1837#1853#0" expanded="true" />
-            <element signature="e#1911#1927#0" expanded="true" />
-            <element signature="e#1985#2001#0" expanded="true" />
-            <element signature="e#2180#2191#0" expanded="true" />
-            <element signature="e#2250#2261#0" expanded="true" />
-            <element signature="e#2320#2331#0" expanded="true" />
-            <element signature="e#5352#5372#0" expanded="true" />
-            <element signature="e#6256#6265#0" expanded="true" />
-            <element signature="e#7169#7180#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2871#2887#0" expanded="true" />
+            <element signature="e#2945#2961#0" expanded="true" />
+            <element signature="e#3019#3035#0" expanded="true" />
+            <element signature="e#3214#3225#0" expanded="true" />
+            <element signature="e#3284#3295#0" expanded="true" />
+            <element signature="e#3354#3365#0" expanded="true" />
+            <element signature="e#6386#6406#0" expanded="true" />
+            <element signature="e#7290#7299#0" expanded="true" />
+            <element signature="e#8203#8214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="36" selection-start="905" selection-end="960" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="26" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2871#2887#0" expanded="true" />
+            <element signature="e#2945#2961#0" expanded="true" />
+            <element signature="e#3019#3035#0" expanded="true" />
+            <element signature="e#3214#3225#0" expanded="true" />
+            <element signature="e#3284#3295#0" expanded="true" />
+            <element signature="e#3354#3365#0" expanded="true" />
+            <element signature="e#6386#6406#0" expanded="true" />
+            <element signature="e#7290#7299#0" expanded="true" />
+            <element signature="e#8203#8214#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -511,17 +559,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="13" selection-start="7931" selection-end="7931" vertical-scroll-proportion="1.112782">
+        <state line="97" column="16" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.6766917">
           <folding>
-            <element signature="e#1837#1853#0" expanded="true" />
-            <element signature="e#1911#1927#0" expanded="true" />
-            <element signature="e#1985#2001#0" expanded="true" />
-            <element signature="e#2180#2191#0" expanded="true" />
-            <element signature="e#2250#2261#0" expanded="true" />
-            <element signature="e#2320#2331#0" expanded="true" />
-            <element signature="e#5352#5372#0" expanded="true" />
-            <element signature="e#6256#6265#0" expanded="true" />
-            <element signature="e#7169#7180#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2871#2887#0" expanded="true" />
+            <element signature="e#2945#2961#0" expanded="true" />
+            <element signature="e#3019#3035#0" expanded="true" />
+            <element signature="e#3214#3225#0" expanded="true" />
+            <element signature="e#3284#3295#0" expanded="true" />
+            <element signature="e#3354#3365#0" expanded="true" />
+            <element signature="e#6386#6406#0" expanded="true" />
+            <element signature="e#7290#7299#0" expanded="true" />
+            <element signature="e#8203#8214#0" expanded="true" />
           </folding>
         </state>
       </provider>
