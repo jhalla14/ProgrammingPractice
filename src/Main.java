@@ -66,21 +66,19 @@ public class Main {
 
 //        System.out.println(isPalindrome("amanaplanacanalpanama"));
 
-        Integer[] array = new Integer[5];
-        array[0] = 10;
-        array[1] = 5;
-        array[2] = 6;
-        array[3] = 2;
-        array[4] = 3;
-
-        Integer[] sortedArray =  bubbleSort(array);
-
-        for (int i=0; i<=sortedArray.length-1;i++){
-            System.out.println(sortedArray[i]);
-        }
-
+//        Integer[] array = new Integer[5];
+//        array[0] = 10;
+//        array[1] = 5;
+//        array[2] = 6;
+//        array[3] = 2;
+//        array[4] = 3;
+//
+//        Integer[] sortedArray =  bubbleSort(array);
+//
+//        for (int i=0; i<=sortedArray.length-1;i++){
+//            System.out.println(sortedArray[i]);
+//        }
     }
-
     public static Integer[] bubbleSort(Integer[] array){
         if (array == null) return null;
         int length = array.length;
@@ -185,7 +183,7 @@ public class Main {
     public static Boolean isStringPermutationOfString(String alpha, String beta){
 
         if (alpha == null || beta == null){
-            System.err.println("Check method paramters of null value");
+            System.err.println("Check method parameters of null value");
             return null;
         }
 
@@ -270,7 +268,6 @@ public class Main {
         if (number == 1){
             return 1;
         }
-
         return  number*factorial(number-1);
 
     }
@@ -311,6 +308,56 @@ public class Main {
                 }
             }
         }
+
+        return true;
+    }
+
+
+    public boolean verifyBoard(int[][] board){
+
+        if (board == null) return false;
+
+        ArrayList<Set<Integer>> list = new ArrayList<Set<Integer>>();
+
+        for(int k=0; k<=list.size();k++){
+            Set<Integer> boxSet = new HashSet<Integer>();
+            list.add(boxSet);
+        }
+
+        for(int i=0; i<=board.length-1;i++){
+            Set<Integer> horizontalSet = new HashSet<Integer>();
+            Set<Integer> verticalSet = new HashSet<Integer>();
+
+            for(int j=0; j<=board[0].length-1;j++){
+                if(!(board[i][j] > 0 && board[i][j] <10)){
+                    return false;
+                }
+
+                Set<Integer> currentBoxSet;
+                currentBoxSet = list.get(Math.floor(i/3) + Math.floor(j/3)*3);
+
+                if(currentBoxSet.contains(board[i][j])){
+                    return false;
+                } else {
+                    currentBoxSet.add(board[i][j]);
+                }
+
+                if(horizontalSet.contains(board[i][j]){
+                    return false;
+                } else {
+                    horizontalSet.add(board[i][j]);
+                }
+
+                if(verticalSet.contains(board[j][i]){
+                    return false;
+                } else {
+                    verticalSet.add(board[j][i]);
+                }
+
+            }
+        }
+
+
 
         return true;
     }
