@@ -78,6 +78,51 @@ public class Main {
 //        for (int i=0; i<=sortedArray.length-1;i++){
 //            System.out.println(sortedArray[i]);
 //        }
+        import java.util.*;
+        class MyClass {
+            public static void compute_palindromes(String[] words) {
+                //check that words are not null
+                //would also check it the words are already a palindrome
+                if (words != null){
+                    List<String> listOfWords = new ArrayList<String>();
+                    //put each string/ word into an element of a list
+                    for(int i=0; i<=words.length-1; i++){
+                        listOfWords.add(words[i]);
+                    }
+                    //go through and create a frequency map of the number
+                    //of characters and how many times they appear in a single word
+                    for(String word: listOfWords){
+                        char[] charArray = word.toCharArray();
+                        System.out.println(charArray);
+                        Map<String,Integer> frequencyMap = new HashMap<String,Integer>();
+                        for(int j=0;j<=charArray.length-1;j++){
+                            if(frequencyMap.containsKey(charArray[j])){
+                                frequencyMap.put(Character.toString(charArray[j]), frequencyMap.get(charArray[j])+1);
+                            } else {
+                                frequencyMap.put(Character.toString(charArray[j]), 1);
+                            }
+                        }
+                        System.out.println(frequencyMap);
+
+                        //loop through the frequencies of a map
+                        //if multiple characters have frequencies of 1 return -1
+                        //if a characters is 1 then it's the middle character of the palindrome
+                        //otherwise if it an even
+                        Set<String> mapKeys = frequencyMap.keySet();
+                        for(Integer frequency: mapKeys){
+                            if(frequency == 1){
+
+                            } else if(frequency % 2 == 0){
+
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+        }
     }
     public static Integer[] bubbleSort(Integer[] array){
         if (array == null) return null;
